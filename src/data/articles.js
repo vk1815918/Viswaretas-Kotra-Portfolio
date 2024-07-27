@@ -1,7 +1,4 @@
 import React from "react";
-import { ReactTinyLink } from 'react-tiny-link';
-import EnhancedLinkPreview from "../components/articles/ArticleComponent";
-import { LinkPreview } from '@dhaiwat10/react-link-preview';
 
 function article_1() {
 	return {
