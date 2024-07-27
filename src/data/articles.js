@@ -1,16 +1,19 @@
 import React from "react";
+import { ReactTinyLink } from 'react-tiny-link';
+import EnhancedLinkPreview from "../components/articles/ArticleComponent";
+import { LinkPreview } from '@dhaiwat10/react-link-preview';
 
 function article_1() {
 	return {
-		date: "7 May 2023",
-		title: "The Benefits of Cloud Computing",
+		date: "16 April 2024",
+		title: "First place in FinHack 2024 (Financial Hackathon)",
 		description:
-			"Cloud computing offers a range of benefits, including cost savings and increased flexibility. Find out why more businesses are turning to the cloud.",
+			"Viswaretas Kotra and Co. recieved 1st place out of 30 teams in the FinHack 2024 (Financial Hackathon) competition at the Jindal School of Management, UT Dallas.",
 		keywords: [
-			"The Benefits of Cloud Computing",
-			"Tharindu",
-			"Tharindu N",
-			"Tharindu Nayanajith",
+			"Fintech",
+			"hackathon",
+			"AI in finance",
+			"UT Dallas",
 		],
 		style: `
 				.article-content {
@@ -26,13 +29,13 @@ function article_1() {
 				`,
 		body: (
 			<React.Fragment>
-				<div className="article-content">
-					<div className="paragraph">Content of article 1</div>
-					<img
-						src="https://picsum.photos/200/300"
-						alt="random"
-						className="randImage"
-					/>
+				<div style={{ width: '100%', height: '1000px', border: '1px solid black' }}>
+					 <iframe 
+						src={"https://jindal.utdallas.edu/news/finhack-2024-challenges-and-encourages-ut-dallas-students/"} 
+						title={"First place in FinHack 2024 (Financial Hackathon)"} 
+						style={{ width: '100%', height: '100%' }} 
+						frameBorder="0"
+					></iframe>
 				</div>
 			</React.Fragment>
 		),
@@ -41,22 +44,25 @@ function article_1() {
 
 function article_2() {
 	return {
-		date: "7 May 2023",
-		title: "Artificial Intelligence in Healthcare",
+		date: "12 August 2023",
+		title: "How to Build a Simple and Elegant React Website in 30 Minutes",
 		description:
-			"AI is transforming the healthcare industry, from improving patient outcomes to streamlining operations. Discover the latest applications of this game-changing technology.",
+			"Have you ever wanted to create your own website from scratch, but felt overwhelmed by the complexity and jargon of web development? Well now there's a simple way to do it!",
 		style: ``,
 		keywords: [
-			"Artificial Intelligence in Healthcare",
-			"Tharindu",
-			"Tharindu N",
-			"Tharindu Nayanajith",
+			"React",
+			"Website framework",
+			"Elegant design",
+			// "Tharindu Nayanajith",
 		],
 		body: (
-			<React.Fragment>
-				<h1>Content of article 2</h1>
-			</React.Fragment>
-		),
+				<div>
+					<a href="https://medium.com/p/132b92cc0dd5" target="_blank" rel="noopener noreferrer">
+						How to Build a Simple and Elegant React Website in 30 Minutes
+					</a>
+				</div>
+
+			),
 	};
 }
 

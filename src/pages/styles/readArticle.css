@@ -6,6 +6,11 @@
 	padding-top: 25px;
 }
 
+.read-article-logo-container:hover {
+    background: #545454; /* Dark grey background color on hover */
+    transition: background-color 0.3s ease-in-out;
+}
+
 .read-article-logo {
 	display: flex;
 	position: fixed;
